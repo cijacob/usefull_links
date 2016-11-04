@@ -12,11 +12,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.2'
+gem 'foundation-rails', '~> 6.2', '>= 6.2.4.0'
+gem 'bcrypt', '~> 3.1.7'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
+# Use Unicorn as the app serve
 # gem 'unicorn'
 
 # Use Capistrano for deployment

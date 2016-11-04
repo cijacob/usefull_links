@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>UsefulLinks</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<% flash.each do |name, message| %>
-	<%= content_tag(:div, message, class:"alert alert-#(name)")%>
-<% end %>
-<% if user_signed_in? %>
-	<ul>
-		<li><%=link_to "submit link", new_link_path%></li>
-		<li><%= link_to "Account", edit_user_registration_path %></li>
-		<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-	</ul>
-	<% else %>
-	<ul>
-		<li><%= link_to "Sign up", new_user_registration_path%></li>
-		<li><%= link_to "Sign in", new_user_session_path%></li>
-	</ul>
-<% end %>
-<%= yield %>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-</body>
+  <body>
+  	<%= render 'layouts/nav' %>
+  	
+
+		<div id="main_content" class="container">
+ 			<% flash.each do |name, msg| %>
+ 				<%= content_tag(:div, msg, class: "alert alert-info") %>
+ 			<% end %>
+ 		<div id="content" class="col-md-9 center-block">
+ 			<%= yield %>
+ 		</div>
+ 	</div>
+		<%= render 'layouts/footer' %>
+  </body>
 </html>
