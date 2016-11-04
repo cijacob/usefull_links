@@ -14,7 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.2'
 gem 'foundation-rails', '~> 6.2', '>= 6.2.4.0'
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'acts_as_votable', '~> 0.10.0'
 # Use Unicorn as the app serve
 # gem 'unicorn'
 
