@@ -1,8 +1,17 @@
 # usefull_links
-My helpful application for remember all website help me during my learning and for practice RubyOnRails
+!!!!!!!Work In Progress!!!!!!!!!!!!!!
+My helpfull application for remember all websites who's help me during my learning.Good exercice for practice RubyOnRails
 
-gemfile: 
+
+-----gemfile:------ 
 *Postgresql
 *foundation_rails
 *devise
 *acts_as_votable 
+
+
+*To Do*
+
+-> Add category by helpfull 
+-> Work on design 
+-> Add features for current user 
