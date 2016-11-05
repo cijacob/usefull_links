@@ -15,6 +15,7 @@ gem 'devise', '~> 4.2'
 gem 'foundation-rails', '~> 6.2', '>= 6.2.4.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 # Use Unicorn as the app serve
 # gem 'unicorn'
 
