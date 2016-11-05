@@ -7,7 +7,8 @@ My helpfull application for remember all websites who's help me during my learni
 *Postgresql
 *foundation_rails
 *devise
-*acts_as_votable 
+*acts_as_votable
+*simple_form_for
 
 
 *To Do*
